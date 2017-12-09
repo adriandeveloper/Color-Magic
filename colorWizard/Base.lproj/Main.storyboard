@@ -18,7 +18,7 @@
         <!--Color Magic-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="colorWizard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ColorPresenterVC" customModule="colorWizard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,15 +48,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="colorNameLbl" destination="YKn-FW-g0g" id="ROH-cc-fdk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Color PickerVC-->
         <scene sceneID="Hbf-ud-QkA">
             <objects>
-                <viewController id="ejM-Ut-M26" sceneMemberID="viewController">
+                <viewController id="ejM-Ut-M26" customClass="ColorPickerVC" customModule="colorWizard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tFj-wc-IbC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +74,9 @@
                                         <state key="normal" title="Green">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorBtnWasPressedWithSender:" destination="ejM-Ut-M26" eventType="touchUpInside" id="P0M-Ph-AVS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wn-O5-Zze">
                                         <rect key="frame" x="0.0" y="120.5" width="375" height="120.5"/>
@@ -79,6 +85,9 @@
                                         <state key="normal" title="Yellow">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorBtnWasPressedWithSender:" destination="ejM-Ut-M26" eventType="touchUpInside" id="1Gx-kn-8jj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-rj-B1L">
                                         <rect key="frame" x="0.0" y="241" width="375" height="121"/>
@@ -87,6 +96,9 @@
                                         <state key="normal" title="Blue">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorBtnWasPressedWithSender:" destination="ejM-Ut-M26" eventType="touchUpInside" id="wTe-Wc-jCF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Il8-hB-nrV">
                                         <rect key="frame" x="0.0" y="362" width="375" height="120.5"/>
@@ -95,6 +107,9 @@
                                         <state key="normal" title="Red">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorBtnWasPressedWithSender:" destination="ejM-Ut-M26" eventType="touchUpInside" id="4pA-bV-uhH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRA-RL-7jL">
                                         <rect key="frame" x="0.0" y="482.5" width="375" height="120.5"/>
@@ -103,6 +118,9 @@
                                         <state key="normal" title="Purple">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="colorBtnWasPressedWithSender:" destination="ejM-Ut-M26" eventType="touchUpInside" id="aMv-kI-EDy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
