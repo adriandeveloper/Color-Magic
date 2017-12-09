@@ -44,7 +44,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="HVP-cZ-wmq"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fUC-ag-Wmx">
                             <connections>
-                                <segue destination="ejM-Ut-M26" kind="show" id="ao7-Qi-Tdg"/>
+                                <segue destination="ejM-Ut-M26" kind="show" identifier="presentColorPickerVC" id="ao7-Qi-Tdg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
